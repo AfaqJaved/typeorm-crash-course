@@ -12,7 +12,7 @@ export class Profile {
 	@Column({nullable : true})
 	skill: string;
 
-	@OneToOne(()=> User , (user) => user.profile)
-	user : User;
+	// @OneToOne(()=> User , (user) => user.profile)
+	// user : User;
 
 }

@@ -1,6 +1,9 @@
 import { DataSource } from "typeorm";
 import { User } from "../entities/User.entity";
 import { Profile } from "../entities/Profile.entity";
+import { Todo } from "../entities/Todo.entity";
+import { Student } from "../entities/Student.entity";
+import { Course } from "../entities/Course.entity";
 
 
 const dataSource = new DataSource({
@@ -14,7 +17,10 @@ const dataSource = new DataSource({
     synchronize : true,
     entities : [
         User,
-        Profile
+        Profile,
+        Todo,
+        Student,
+        Course
     ]
 })
 
